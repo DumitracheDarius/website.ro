@@ -29,7 +29,7 @@ const translations = {
 
     // Showcase Section
     'showcase.title': 'Ce îți putem oferi?',
-    'showcase.description': 'Explorează demo-urile noastre interactive și descoperă cum putem crea website-ul perfect pentru afacerea ta. Fiecare demo este personalizat pentru industria ta specifică.',
+    'showcase.description': 'Explorează portofoliul nostru de proiecte live și demo-urile interactive pentru a descoperi cum putem crea website-ul perfect pentru afacerea ta. De la proiecte reale la demonstrații personalizate pentru industria ta specifică, îți arătăm cum putem transforma viziunea ta în realitate.',
     'showcase.demo.interactive': 'Demo Interactiv - Click și scroll pentru a explora',
     
     // Demo Types
@@ -106,6 +106,26 @@ const translations = {
     'pricing.form.submit': 'Trimite Solicitarea',
     'pricing.form.success.title': 'Mulțumim pentru mesaj!',
     'pricing.form.success.message': 'Am primit solicitarea ta și te vom contacta în curând.',
+
+    // Portfolio Section
+    'portfolio.sectionTitle': 'Ultimele Noastre Proiecte',
+    'portfolio.sectionDescription': 'Explorează câteva dintre cele mai recente proiecte pe care le-am dezvoltat pentru clienții noștri.',
+    'portfolio.interact': 'Interacționează cu site-ul',
+    'portfolio.exitInteractive': 'Ieși din modul interactiv',
+    'portfolio.visitWebsite': 'Vizitează Site-ul',
+    
+    // Portfolio Items
+    'portfolio.stilclas.title': 'StilClas.ro',
+    'portfolio.stilclas.description': 'StilClas.ro este o platformă elegantă de e-commerce specializată în modă masculină formală. Oferă o gamă largă de produse incluzând costume, paltoane, pantofi și accesorii, adresându-se domnilor moderni care caută calitate și stil.',
+    
+    'portfolio.mentalist.title': 'MentalistApp.com',
+    'portfolio.mentalist.description': 'Mentalist este o aplicație companion pentru bunăstare personală, concepută pentru a ajuta utilizatorii să își seteze obiective, să își monitorizeze emoțiile și să se reconecteze cu ei înșiși. Servește ca un instrument comprehensiv pentru gestionarea stării de bine mentale.',
+    
+    'portfolio.globalrecords.title': 'Global Records Casting',
+    'portfolio.globalrecords.description': 'Aceasta este o platformă de casting dezvoltată pentru Global Records, având ca scop descoperirea de noi talente muzicale. Permite artiștilor aspiranți să aplice pentru audiții și demonstrează angajamentul casei de discuri pentru cultivarea talentelor noi.',
+    
+    'portfolio.smokareala.title': 'Smokareala Design',
+    'portfolio.smokareala.description': 'Un proiect de design web creativ și modern care pune accentul pe estetica unică și navigarea intuitivă, personalizat pentru brandul Smokareala.',
   },
   en: {
     // Navigation
@@ -127,7 +147,7 @@ const translations = {
 
     // Showcase Section
     'showcase.title': 'What can we offer?',
-    'showcase.description': 'Explore our interactive demos and discover how we can create the perfect website for your business. Each demo is customized for your specific industry.',
+    'showcase.description': 'Explore our portfolio of live projects and interactive demos to discover how we can create the perfect website for your business. From real-world projects to customized demonstrations for your specific industry, we show you how we can transform your vision into reality.',
     'showcase.demo.interactive': 'Interactive Demo - Click and scroll to explore',
     
     // Demo Types
@@ -204,6 +224,26 @@ const translations = {
     'pricing.form.submit': 'Send Request',
     'pricing.form.success.title': 'Thank you for your message!',
     'pricing.form.success.message': 'We have received your request and will contact you soon.',
+
+    // Portfolio Section
+    'portfolio.sectionTitle': 'Our Latest Projects',
+    'portfolio.sectionDescription': 'Explore some of our most recent projects we\'ve developed for our clients.',
+    'portfolio.interact': 'Interact with the live site',
+    'portfolio.exitInteractive': 'Exit Interactive Mode',
+    'portfolio.visitWebsite': 'Visit Website',
+    
+    // Portfolio Items
+    'portfolio.stilclas.title': 'StilClas.ro',
+    'portfolio.stilclas.description': 'StilClas.ro is an elegant e-commerce platform specializing in formal menswear. It offers a wide range of products including suits, coats, shoes, and accessories, catering to the modern gentleman seeking quality and style.',
+    
+    'portfolio.mentalist.title': 'MentalistApp.com',
+    'portfolio.mentalist.description': 'Mentalist is a personal wellness companion app designed to help users set goals, track emotions, and reconnect with themselves. It serves as a comprehensive tool for managing mental well-being.',
+    
+    'portfolio.globalrecords.title': 'Global Records Casting',
+    'portfolio.globalrecords.description': 'This is a casting platform developed for Global Records, aimed at discovering new musical talents. It allows aspiring artists to apply for auditions and showcases the label\'s commitment to nurturing fresh talent.',
+    
+    'portfolio.smokareala.title': 'Smokareala Design',
+    'portfolio.smokareala.description': 'A creative and modern website design project that emphasizes unique aesthetics and user-friendly navigation, tailored for the Smokareala brand.',
   }
 };
 

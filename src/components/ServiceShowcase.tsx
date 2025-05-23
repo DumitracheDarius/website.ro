@@ -68,53 +68,54 @@ const ServiceShowcase: React.FC = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
           <span className="gradient-text">{t('showcase.title')}</span>
         </h2>
-        <p className="text-lg sm:text-xl text-textSecondary max-w-3xl mx-auto px-4">
+        <p className="text-lg sm:text-xl text-textSecondary max-w-4xl mx-auto px-4">
           {t('showcase.description')}
         </p>
       </div>
 
-      <div className="mb-16">
-        <h3 className="text-2xl font-bold mb-8 text-center">Our Portfolio</h3>
-        <PortfolioGrid />
-      </div>
+      <div className="space-y-24">
+        <div>
+          <PortfolioGrid />
+        </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-        {demos.map((demo) => (
-          <div 
-            key={demo.id}
-            className="bg-primary rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-accent/10 group"
-          >
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {demos.map((demo) => (
             <div 
-              className="h-48 sm:h-56 bg-cover bg-center relative cursor-pointer"
-              style={{ backgroundImage: `url('${demo.image}')` }}
-              onClick={() => toggleDemo(demo.id)}
+              key={demo.id}
+              className="bg-primary rounded-lg overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-accent/10 group"
             >
-              <div className="absolute inset-0 bg-primary/70 flex items-center justify-center group-hover:bg-primary/60 transition-all duration-300">
-                <div className="text-center text-textPrimary p-4 sm:p-6">
-                  <h3 className="text-xl sm:text-2xl font-bold mb-2">{demo.title}</h3>
-                  <p className="mb-4 text-textSecondary text-sm sm:text-base">{demo.description}</p>
-                  <button className="flex items-center mx-auto text-accent border border-accent rounded-full p-2 hover:bg-accent/10 transition-colors">
-                    {activeDemo === demo.id ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
-                  </button>
+              <div 
+                className="h-48 sm:h-56 bg-cover bg-center relative cursor-pointer"
+                style={{ backgroundImage: `url('${demo.image}')` }}
+                onClick={() => toggleDemo(demo.id)}
+              >
+                <div className="absolute inset-0 bg-primary/70 flex items-center justify-center group-hover:bg-primary/60 transition-all duration-300">
+                  <div className="text-center text-textPrimary p-4 sm:p-6">
+                    <h3 className="text-xl sm:text-2xl font-bold mb-2">{demo.title}</h3>
+                    <p className="mb-4 text-textSecondary text-sm sm:text-base">{demo.description}</p>
+                    <button className="flex items-center mx-auto text-accent border border-accent rounded-full p-2 hover:bg-accent/10 transition-colors">
+                      {activeDemo === demo.id ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+              <div className={`transition-all duration-500 ease-in-out overflow-hidden ${
+                activeDemo === demo.id ? 'max-h-[600px]' : 'max-h-0'
+              }`}>
+                <div className="p-4">
+                  <div className="bg-secondary rounded-lg p-2 mb-4 flex items-center justify-between">
+                    <p className="text-sm text-textSecondary">{t('showcase.demo.interactive')}</p>
+                    <ExternalLink size={16} className="text-accent" />
+                  </div>
+                  <div className="h-[500px] overflow-hidden rounded-lg border border-secondary shadow-inner">
+                    <demo.component />
+                  </div>
                 </div>
               </div>
             </div>
-            
-            <div className={`transition-all duration-500 ease-in-out overflow-hidden ${
-              activeDemo === demo.id ? 'max-h-[600px]' : 'max-h-0'
-            }`}>
-              <div className="p-4">
-                <div className="bg-secondary rounded-lg p-2 mb-4 flex items-center justify-between">
-                  <p className="text-sm text-textSecondary">{t('showcase.demo.interactive')}</p>
-                  <ExternalLink size={16} className="text-accent" />
-                </div>
-                <div className="h-[500px] overflow-hidden rounded-lg border border-secondary shadow-inner">
-                  <demo.component />
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
