@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0f172a;
+  --secondary: #1e293b;
+  --accent: #38bdf8;
+  --text: #f8fafc;
+  --text-secondary: #94a3b8;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  background-color: var(--primary);
+}
+
+.section-padding {
+  @apply py-24 md:py-32;
+}
+
+.container {
+  @apply px-4 md:px-8 max-w-7xl mx-auto;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+  @apply bg-sky-500 hover:bg-sky-600 text-white font-medium py-3 px-6 rounded-md transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply border border-sky-500 text-sky-500 hover:bg-sky-500/10 font-medium py-3 px-6 rounded-md transition-all duration-300 relative;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* Make sure links are clickable */
+a, button {
+  cursor: pointer;
+}
+
+/* Optimize cursor performance */
+#custom-cursor {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  perspective: 1000;
+}
