@@ -126,6 +126,9 @@ const translations = {
     
     'portfolio.smokareala.title': 'Smokareala Design',
     'portfolio.smokareala.description': 'Un proiect de design web creativ și modern care pune accentul pe estetica unică și navigarea intuitivă, personalizat pentru brandul Smokareala.',
+
+    // WhatsApp Button
+    'whatsapp.chat': 'Discută cu noi',
   },
   en: {
     // Navigation
@@ -244,6 +247,9 @@ const translations = {
     
     'portfolio.smokareala.title': 'Smokareala Design',
     'portfolio.smokareala.description': 'A creative and modern website design project that emphasizes unique aesthetics and user-friendly navigation, tailored for the Smokareala brand.',
+
+    // WhatsApp Button
+    'whatsapp.chat': 'Chat with us',
   }
 };
 
