@@ -30,10 +30,10 @@ const Pricing: React.FC = () => {
 
     try {
       await emailjs.sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        'service_nzx34mh',
+        'template_aghlwtm',
         formRef.current!,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        'D8si53hwoTHAo5mZ7'
       );
 
       setFormSubmitted(true);
